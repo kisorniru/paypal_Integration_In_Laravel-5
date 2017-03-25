@@ -21,8 +21,8 @@ php artisan serve
 
 ## Authontication Document
 
-The project is owned by [Md. Noor-A-Alam Siddique](http://127.0.01)
+The project is owned by [Md. Noor-A-Alam Siddique](https://www.facebook.com/kisorniru)
 
 ## Developer Document
 
-The project is developed by [Md. Noor-A-Alam Siddique](http://127.0.01)
+The project is developed by [Md. Noor-A-Alam Siddique](https://www.facebook.com/kisorniru)
