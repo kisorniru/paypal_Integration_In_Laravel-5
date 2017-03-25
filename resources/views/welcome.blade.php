@@ -47,13 +47,27 @@
                             <br>
                             <br>
                             <br>
-                            <div class="form-group{{ $errors->has('price') ? ' has-error' : '' }}">
-                                <label for="price" class="col-md-4 control-label">Amount</label>
+                            <div class="form-group{{ $errors->has('quantiy') ? ' has-error' : '' }}">
+                                <label for="quantiy" class="col-md-4 control-label">Quantiy</label>
                                 <div class="col-md-6">
-                                    <input id="price" type="text" class="form-control" name="price" value="{{ old('price') }}" autofocus>
-                                    @if ($errors->has('price'))
+                                    <input id="quantiy" type="text" class="form-control" name="quantiy" value="{{ old('quantiy') }}" autofocus>
+                                    @if ($errors->has('quantiy'))
                                         <span class="help-block">
-                                            <strong>{{ $errors->first('price') }}</strong>
+                                            <strong>{{ $errors->first('quantiy') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="form-group{{ $errors->has('singleProductPrice') ? ' has-error' : '' }}">
+                                <label for="singleProductPrice" class="col-md-4 control-label">Single Product Price</label>
+                                <div class="col-md-6">
+                                    <input id="singleProductPrice" type="text" class="form-control" name="singleProductPrice" value="{{ old('singleProductPrice') }}" autofocus>
+                                    @if ($errors->has('singleProductPrice'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('singleProductPrice') }}</strong>
                                         </span>
                                     @endif
                                 </div>

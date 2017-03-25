@@ -66,7 +66,9 @@ class PayPalController extends Controller
         
         $paypal = $this->paypal();
         $product = $request->product;
-        $price = $request->price;
+        $quantiy = $request->quantiy;
+        $singleProductPrice = $request->singleProductPrice;
+        $price = $singleProductPrice * $quantiy;
         $shipping = 2.00;
         $total = $price + $shipping;
 
@@ -76,8 +78,8 @@ class PayPalController extends Controller
         $item = new Item();
         $item->setName($product)
           ->setCurrency('USD')
-          ->setQuantity(1)
-          ->setPrice($price);
+          ->setQuantity($quantiy)
+          ->setPrice($singleProductPrice);
 
         $itemList = new ItemList();
         $itemList->setItems([$item]);
