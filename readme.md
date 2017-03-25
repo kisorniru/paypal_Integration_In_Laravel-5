@@ -11,11 +11,11 @@
 ## Installation
 
 ```sh
-git clone https://kisorniru@bitbucket.org/kisorniru/laravel-with-paypal.git
-cd laravel-with-paypal
+git clone https://kisorniru@bitbucket.org/kisorniru/paypal_Integration_In_Laravel-5.git
+cd paypal_Integration_In_Laravel-5
 create composer
 // composer update
-php artisan migrate:refresh
+// php artisan migrate:refresh
 php artisan serve
 ```
 
